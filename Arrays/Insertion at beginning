@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() {
+
+    int arr[]={1,5,7,9};
+    int n=4;
+    int i;
+    int new;
+    printf("Enter new no: ");
+    scanf("%d",&new);
+    for(i=n;i>0;i--)
+    {
+        arr[i]=arr[i-1];
+    }
+    n++;
+    arr[0]=new;
+    for(i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+    return 0;
+}
