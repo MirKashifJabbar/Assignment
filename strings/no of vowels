@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    char str[40];
+    int vowels=0;
+    int i;
+    printf("Enter your word: ");
+    scanf("%s",str);
+    int len=strlen(str);
+for(i=0;i<=len-1;i++)
+{
+char v = str[i];
+if(v=='a' || v=='e' || v=='i' || v=='o' || v=='u' ||v=='A' || v=='E' || v=='I' || v=='O' || v=='U'  )
+{
+    vowels++;
+}
+}
+printf("The no of vowels= %d\n",vowels);
+
+return 0;
+}
