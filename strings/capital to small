@@ -12,7 +12,7 @@ printf("Enter your word: ");
             str[i]=str[i]+32;
         }
     }
-printf("The capital word is:%s\n",str);
+printf("The small word is:%s\n",str);
 
 return 0;
 }
