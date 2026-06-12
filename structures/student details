@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+
+struct student {
+      char Name [50];
+    int Roll_No;
+    float Marks;
+  
+};
+
+int main(){
+    
+struct student s[5]={
+    {"varun",1,30},
+    {"akash",2,35},
+    {"night",3,40},
+    {"madhan",4,4},
+    {"hunter",5,33}
+} ;
+for(int i=0;i<5;i++){
+    printf("Name= %s\n",s[i].Name);
+     printf("Roll No= %d\n",s[i].Roll_No);
+      printf("Marks= %.2f\n",s[i].Marks);
+
+}
+
+
+
+    return 0;
+}
